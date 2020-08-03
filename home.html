@@ -1,0 +1,186 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="jquery_functions.js"></script>
+  <script src="js1.js"></script>
+</head>
+<body class="bg"> 
+<div class="start">
+  <h3 style="color: white">Every Day is Abs Day With</h3>
+  <h2>ABS BLASTER</h2>
+  <button id="plan">Let's Start</button>
+</div>
+<div class="header">
+	<a href="javascript:window.location.reload(true)">ABS BLASTER</a>
+</div>
+<div class="choose_video">
+	<br>
+	<br>
+	<br>
+  <h3>SELECT ALL THE EXERCISE VIDEOS FOR TODAY'S WORKOUT:</h3>
+  <div id="row">
+      <div id="column">
+      <video width="220" height="132" controls>
+      	<source src="test1.mp4" type="video/mp4">
+      </video>
+      <br>
+      	<p>Difficulty: Easy</p>
+        <p>Exercise 1: Flutter-Kicks</p>
+      <input type="checkbox" name="add" value="add1">
+      </div>
+      <div id="column">
+      <video width="220" height="132" controls>
+      	<source src="test2.mp4" type="video/mp4">
+      </video>
+      <br>
+      	<p>Difficulty: Medium</p>
+        <p>Exercise 2: Reaching Oblique Crunch</p>
+      <input type="checkbox" name="add" value="add2">
+      </div>
+      <div id="column">
+      <video width="220" height="132" controls>
+      	<source src="test3.mp4" type="video/mp4">
+      </video>
+      <br>
+      	<p> Difficulty: Hard</p>
+        <p>Exercise 3: Pilates Side Hip Raises</p>
+      <input type="checkbox" name="add" value="add3">
+      </div>
+  </div>
+  <br>
+  <div id="row">
+      <div id="column">
+      <video width="220" height="132" controls>
+      	<source src="test4.mp4" type="video/mp4">
+      </video>
+      <br>
+      	<p>Difficulty: Easy</p>
+        <p>Exercise 4: Russian Twists</p>
+      <input type="checkbox" name="add" value="add4">
+      </div>
+      <div id="column">
+      <video width="220" height="132" controls>
+      	<source src="test5.mp4" type="video/mp4">
+      </video>
+      <br>
+      	<p>Difficulty: Medium</p>
+        <p>Exercise 5: Toe Touch Crunches</p>
+      <input type="checkbox" name="add" value="add5">
+      </div>
+      <div id="column">
+      <video width="220" height="132" controls>
+      	<source src="test6.mp4" type="video/mp4">
+      </video>
+      <br>
+      	<p>Difficulty: Hard</p>
+        <p>Exercise 6: Pilates Leg Pulls (Down)</p>
+      <input type="checkbox" name="add" value="add6">
+      </div>
+  </div>
+  <br>
+  <div id="row">
+      <div id="column">
+      <video width="220" height="132" controls>
+      	<source src="test7.mp4" type="video/mp4">
+      </video>
+      <br>
+      	<p>Difficulty: Easy</p>
+        <p>Exercise 7: Pilates Leg Pulls (Up)</p>
+      <input type="checkbox" name="add" value="add7">
+      </div>
+      <div id="column">
+      <video width="220" height="132" controls>
+      	<source src="test8.mp4" type="video/mp4">
+      </video>
+      <br>
+      	<p>Difficulty: Medium</p>
+        <p>Exercise 8: Pilates Toe Taps</p>
+      <input type="checkbox" name="add" value="add8">
+      </div>
+      <div id="column">
+      <video width="220" height="132" controls>
+      	<source src="test9.mp4" type="video/mp4">
+      </video>
+      <br>
+      	<p>Difficuly: Hard</p>
+        <p>Exercise 9: Knee Tuck Crunches</p>
+      <input type="checkbox" name="add" value="add9">
+      </div>
+  </div>
+  <br>
+  <div id="row">
+      <button id="planner">DONE SELECTING</button>
+  </div>
+</div>
+<div class="video_order" id="order_id">
+	<br>
+	<br>
+	<br>
+  <h3>DRAG AND DROP VIDEOS TO DECIDE THE ORDER IN WHICH YOU WANT TO WORKOUT:</h3>
+  <div id="video_list">
+  </div>
+  <button id="back1">ADD MORE VIDEOS?</button>
+  <button id="order">DONE ORDERING!</button>
+</div>
+<div class="video_editor" id="editor_id">
+	<br>
+	<br>
+	<br>
+  <h3>ENTER NUMBER OF TIMES YOU WANT TO DO THIS EXERCISE:</h3>
+  <div class="forms">
+  </div>
+  <button id="back2">RE-ORDER VIDEOS AGAIN?</button>
+  <button id="submit1">LETS WORKOUT!</button>
+</div>
+<div class="summary">
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>THE WORKOUT PLAN FOR TODAY IS AS FOLLOWS:</h3>
+	<br>
+	<div class="final_summary"></div>
+	<br>
+	<button id="back3">Plan Sets Again?</button>
+	<button id="submit">START WORKOUT!</button>
+</div>
+<div class="video_player" style="text-align:center" id="player_id"> 
+  <br>
+  <br>
+  <br>
+  <div> EXERCISE NUMBER: <span id="exercise"></span></div>
+  <div> EXERCISE NAME: <span id="exercise_name"></span></div>
+  <video id="video" width="620" controls>
+  </video>
+  <br>
+  <button id="back4">See Summary Again?</button>
+  <button id="play">Play</button> 
+  <button id="pause">Pause</button>
+  <button id="next">Next Exercise</button>  
+  <br>
+  <div>SET NUMBER: <span id="iteration"></span></div>
+  <div>SET'S REMAINING: <span id="iteration1"></span></div>
+</div> 
+<div class="workout_list">
+  <br>
+  <h4>Exercise to do in today's workout:</h4>
+  <br>
+</div>
+<div class="end">
+  <h3 style="color: white">Congratulations! You just did it.</h3>
+  <h2>EAT</h2>
+  <h2>SLEEP</h2>
+  <h2>ABS</h2>
+  <h2>REPEAT</h2>
+  <button id="restart">Start Again?</button>
+</div>
+</body> 
+</html>
+
